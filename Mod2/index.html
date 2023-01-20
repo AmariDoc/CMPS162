@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Favorite Things</title>
+  <script>
+    function showFavorites() {
+      var fav_sport = prompt("What is your favorite sport?");
+      var fav_movie = prompt("What is your favorite movie?");
+      var fav_tv_show = prompt("What is your favorite TV show?");
+      document.getElementById("fav_sport").innerHTML = fav_sport;
+      document.getElementById("fav_movie").innerHTML = fav_movie;
+      document.getElementById("fav_tv_show").innerHTML = fav_tv_show;
+    }
+  </script>
+</head>
+<body onload="showFavorites()">
+  <h1>My Favorite Things</h1>
+  <p>My favorite sport is <span id="fav_sport"></span></p>
+  <p>My favorite movie is <span id="fav_movie"></span></p>
+  <p>My favorite TV show is <span id="fav_tv_show"></span></p>
+</body>
+</html>
